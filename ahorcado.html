@@ -4,16 +4,27 @@
     <meta charset="UTF-8">
     <title>Juego del Ahorcado :)</title>
     <script src="ahorcado.js"></script>
+    <style>
+        #Main{
+            border: 2px green solid;
+            border-radius: 30px;
+            width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <h1>Adivina la palabra letra a letra</h1>
-    <p>
-        elige una letra:
-        <input type="text" id="letra"/>
-        <input type="button" id="boton" value="Boom!!"/>
-    </p>
-    <h2 id="pista"></h2>
-    <canvas id="c"></canvas>
+    <div id="Main">
+        <h1>Adivina la palabra letra a letra</h1>
+        <p>
+            elige una letra:
+            <input type="text" id="letra"/>
+            <input type="button" id="boton" value="Boom!!"/>
+        </p>
+        <h2 id="pista"></h2>
+        <canvas id="c"></canvas>
+    </div>
     <script>
         inicio();
     </script>
