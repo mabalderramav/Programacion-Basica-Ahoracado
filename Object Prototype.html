@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Objetos</title>
+    <script>
+        //Notacion JSON
+        var perro = {
+            agilidad: 50;
+            fuerza: 100;
+            limpieza: false,
+            longevidad: 14,
+            amor: true,
+            voz: function() 
+            {
+                alert("guau!");
+            }
+        }
+        //Clase: Objeto maestro, del que derivan otros objetos
+        //Clases: Definicion de un objeto
+        var Mascota = function (n,v) 
+        {
+            this.nombre = n;
+            this.agilidad = 0;
+            this.fuerza = 0;
+            this.limpieza = false;
+            this.longevidad = 0;
+            this.amor = true;
+            this.voz = v;
+        }
+        Mascota.prototype.hablar = function()
+        {
+            alert(this.voz);
+        };
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
