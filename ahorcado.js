@@ -120,7 +120,14 @@ function inicio()
 function agregarLetra()
 {
     var letra = l.value;
-    mostrarPalabra(palabra, hombre, letra);
+    if(letra != "" && letra != null && letra != undefined)
+    {
+        mostrarPalabra(palabra, hombre, letra);
+    }
+    else
+    {
+        alert("Por Favor digite una letra para empezar a pillar la palabra completa =)");
+    }
 }
 function mostrarPalabra(palabra, ahoracado, letra)
 {
